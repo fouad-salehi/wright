@@ -1,0 +1,14 @@
+{
+  "name": "wright",
+  "version": "2.0.0",
+  "description": "A folder structure generator for web developers.",
+  "main": "wright.js",
+  "scripts": {
+    "start": "node wright.js"
+  },
+  "author": "Fouad Salehi",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "node": ">=14"
+  }
+}
