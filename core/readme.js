@@ -105,11 +105,11 @@ For larger projects, additional directories can be added as the project grows.
 
 ## License
 
-This project is open source.
+This project is proprietary software.
 
-For more information and the latest version of WRIGHT, visit:
+For the complete license terms, see the LICENSE file in the WRIGHT project repository:
 
-https://github.com/fouad-salehi`;
+https://github.com/fouad-salehi/wright`;
 };
 
 module.exports = {
