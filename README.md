@@ -79,6 +79,17 @@ my-website/
 └── README.txt
 ```
 
+
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/36f49eee-5e12-4e27-a7b1-24fc71def6e1" width="24%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/0b2ba309-1fe7-4668-815b-0a4214baf8bf" width="24%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/1fd88cbc-ad1e-425c-a3cd-73af902d438b" width="24%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/32d4a72a-fe6f-4857-9176-b20d9ec063f2" width="24%" style="border-radius: 12px;" />
+</p>
+
+
 ## Presets
 
 WRIGHT ships with three built-in presets:
