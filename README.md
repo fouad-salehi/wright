@@ -67,7 +67,7 @@ or, for a plain project:
 
 The generated project will have a structure similar to:
 
-<img width="1536" height="713" alt="wright structure similar" src="https://github.com/user-attachments/assets/1ce2e2bb-04e8-4882-b84c-48f9840d01c0" />
+<img width="1536" height="713" alt="wrightStructureSimilar" src="https://github.com/user-attachments/assets/1ce2e2bb-04e8-4882-b84c-48f9840d01c0" />
 
 
 ## Screenshots
@@ -96,23 +96,7 @@ Each preset generates the same base structure, but adapts `index.html` and `styl
 
 WRIGHT is organized into a shared core and independent presets:
 
-```text
-wright/
-├── core/
-│   ├── logger.js
-│   ├── prompt.js
-│   ├── downloader.js
-│   ├── readme.js
-│   └── filesystem.js
-├── presets/
-│   ├── vanilla.js
-│   ├── tailwind.js
-│   └── bootstrap.js
-├── wright.js
-├── package.json
-├── README.md
-└── LICENSE
-```
+<img width="1536" height="713" alt="wrightArchitecture" src="https://github.com/user-attachments/assets/36ac5de8-fff0-4c2d-b601-6c584285a29d" />
 
 The `core/` directory contains everything shared between presets, and each preset in `presets/` only defines what is specific to its framework.
 
