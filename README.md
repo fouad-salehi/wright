@@ -119,7 +119,7 @@ WRIGHT is designed to make the initial setup of a web project simple, fast, and 
 
 This project is proprietary software.
 
-You may view and run the project for personal or evaluation purposes, subject to the terms of the LICENSE file.
+You may view and run the project for personal or evaluation purposes, subject to the terms of the LICENSE file. See the [LICENSE](./LICENSE) file for full terms.
 
 Copying, modifying, creating derivative works, incorporating the project into another project, or redistributing modified versions is not permitted.
 
