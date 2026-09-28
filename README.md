@@ -8,7 +8,7 @@
 ![Run](https://img.shields.io/badge/run-node%20wright.js-important)
 
 
-<img width="1983" height="793" alt="wrightBanner" src="https://github.com/user-attachments/assets/cbeac193-f837-48de-9ad7-9df7a82c7205" />
+<img width="1983" height="793" alt="WRIGHT — web project structure generator banner" src="https://github.com/user-attachments/assets/cbeac193-f837-48de-9ad7-9df7a82c7205" />
 
 
 ## Description
@@ -29,11 +29,14 @@ The generated structure includes:
 * A `favicon.ico`
 * A project `README.txt`
 
+## Requirements
+
+- [Node.js](https://nodejs.org/) v18 or higher
+- No external dependencies — WRIGHT runs with plain Node.js
+
 ## Getting Started
 
-Make sure [Node.js](https://nodejs.org/) is installed on your system.
-
-Then run:
+Clone or download the repository, then run:
 
 ```bash
 node wright.js
@@ -41,7 +44,14 @@ node wright.js
 
 WRIGHT will ask you for a project name, then ask which preset you want to use. Depending on the preset, it may ask for a version.
 
-For example:
+**Vanilla project:**
+
+```text
+› Project name: my-website
+› Preset? (vanilla / tailwind / bootstrap): vanilla
+```
+
+**Tailwind project:**
 
 ```text
 › Project name: my-website
@@ -49,7 +59,7 @@ For example:
 › Tailwind version? (v3 / v4): v4
 ```
 
-or:
+**Bootstrap project:**
 
 ```text
 › Project name: my-website
@@ -57,25 +67,18 @@ or:
 › Bootstrap version? (v4 / v5): v5
 ```
 
-or, for a plain project:
-
-```text
-› Project name: my-website
-› Preset? (vanilla / tailwind / bootstrap): vanilla
-```
-
 The generated project will have a structure similar to:
 
-<img width="1536" height="713" alt="wrightStructureSimilar" src="https://github.com/user-attachments/assets/1ce2e2bb-04e8-4882-b84c-48f9840d01c0" />
+<img width="1536" height="713" alt="WRIGHT generated project structure" src="https://github.com/user-attachments/assets/1ce2e2bb-04e8-4882-b84c-48f9840d01c0" />
 
 
 ## Screenshots
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/36f49eee-5e12-4e27-a7b1-24fc71def6e1" width="24%" style="border-radius: 12px;" />
-  <img src="https://github.com/user-attachments/assets/0b2ba309-1fe7-4668-815b-0a4214baf8bf" width="24%" style="border-radius: 12px;" />
-  <img src="https://github.com/user-attachments/assets/1fd88cbc-ad1e-425c-a3cd-73af902d438b" width="24%" style="border-radius: 12px;" />
-  <img src="https://github.com/user-attachments/assets/32d4a72a-fe6f-4857-9176-b20d9ec063f2" width="24%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/36f49eee-5e12-4e27-a7b1-24fc71def6e1" alt="Running node wright.js in the terminal" width="24%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/0b2ba309-1fe7-4668-815b-0a4214baf8bf" alt="WRIGHT prompting for the project name" width="24%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/1fd88cbc-ad1e-425c-a3cd-73af902d438b" alt="Selecting the vanilla preset" width="24%" style="border-radius: 12px;" />
+  <img src="https://github.com/user-attachments/assets/32d4a72a-fe6f-4857-9176-b20d9ec063f2" alt="WRIGHT success message after generating the project" width="24%" style="border-radius: 12px;" />
 </p>
 
 
@@ -95,7 +98,7 @@ Each preset generates the same base structure, but adapts `index.html` and `styl
 
 WRIGHT is organized into a shared core and independent presets:
 
-<img width="1536" height="713" alt="wrightArchitecture" src="https://github.com/user-attachments/assets/36ac5de8-fff0-4c2d-b601-6c584285a29d" />
+<img width="1536" height="713" alt="WRIGHT architecture — shared core and independent presets" src="https://github.com/user-attachments/assets/36ac5de8-fff0-4c2d-b601-6c584285a29d" />
 
 The `core/` directory contains everything shared between presets, and each preset in `presets/` only defines what is specific to its framework.
 
