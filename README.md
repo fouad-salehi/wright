@@ -119,6 +119,30 @@ WRIGHT is organized into a shared core and independent presets:
 
 <img width="1536" height="713" alt="WRIGHT architecture — shared core and independent presets" src="https://github.com/user-attachments/assets/36ac5de8-fff0-4c2d-b601-6c584285a29d" />
 
+<details>
+<summary>Click to expand and copy</summary>
+  
+```text
+wright/
+├── core/
+│   ├── logger.js
+│   ├── prompt.js
+│   ├── downloader.js
+│   ├── readme.js
+│   └── filesystem.js
+├── presets/
+│   ├── vanilla.js
+│   ├── tailwind.js
+│   └── bootstrap.js
+├── wright.js
+├── package.json
+├── README.md
+└── LICENSE
+```
+
+</details>
+
+
 The `core/` directory contains everything shared between presets, and each preset in `presets/` only defines what is specific to its framework.
 
 This makes it easy to add new presets (for example, Vue, React, Svelte, or Astro) without duplicating logic.
