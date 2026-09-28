@@ -7,8 +7,8 @@
 ![Presets](https://img.shields.io/badge/presets-vanilla%20%7C%20tailwind%20%7C%20bootstrap-blue)
 ![Run](https://img.shields.io/badge/run-node%20wright.js-important)
 
+<img width="1586" height="793" alt="WRIGHT — web project structure generator" src="https://github.com/user-attachments/assets/2dc3410e-d86b-4997-a397-c9fa25fe2e2f" />
 
-<img width="1983" height="793" alt="WRIGHT — web project structure generator banner" src="https://github.com/user-attachments/assets/cbeac193-f837-48de-9ad7-9df7a82c7205" />
 
 
 ## Description
