@@ -10,7 +10,6 @@
 
 <img width="1983" height="793" alt="wrightBanner" src="https://github.com/user-attachments/assets/cbeac193-f837-48de-9ad7-9df7a82c7205" />
 
-**WRIGHT — A folder structure generator for web developers.**
 
 ## Description
 
@@ -110,9 +109,8 @@ WRIGHT is designed to make the initial setup of a web project simple, fast, and 
 
 ## Author
 
-Fouad Salehi
+[**Fouad Salehi**](https://github.com/fouad-salehi)
 
-GitHub: https://github.com/fouad-salehi
 
 ## License
 
