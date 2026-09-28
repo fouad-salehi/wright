@@ -71,6 +71,25 @@ The generated project will have a structure similar to:
 
 <img width="1536" height="713" alt="WRIGHT generated project structure" src="https://github.com/user-attachments/assets/1ce2e2bb-04e8-4882-b84c-48f9840d01c0" />
 
+<details>
+<summary>Click to expand and copy</summary>
+  
+```text
+my-website/
+├── dashboard/
+│   └── assets/
+│       ├── css/
+│       │   └── stylesheet.css
+│       ├── js/
+│       │   └── app.js
+│       ├── images/
+│       └── fonts/
+├── index.html
+├── favicon.ico
+└── README.txt
+```
+
+</details>
 
 ## Screenshots
 
