@@ -157,3 +157,7 @@ Redistribution of the original project is permitted only with clear and visible 
 Fouad Salehi / WRIGHT — Web Project Folder Structure
 
 Any use beyond the permissions granted by the LICENSE requires prior written permission from the copyright owner.
+
+## Copyright
+
+Copyright © 2026 Fouad Salehi. All rights reserved.
