@@ -150,10 +150,6 @@ WRIGHT is **proprietary software**.
 
 You may view and run the project for personal or evaluation purposes only. Copying, modifying, creating derivative works, incorporating the project into another project, or redistributing modified versions is **not** permitted.
 
-Redistribution of the original project is permitted only with clear and visible attribution to:
-
-**Fouad Salehi / WRIGHT — Web Project Folder Structure**
-
 See the [LICENSE](./LICENSE) file for the complete terms.
 
 ## Copyright
