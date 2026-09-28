@@ -68,11 +68,6 @@ WRIGHT will ask you for a project name, then ask which preset you want to use. D
 ```
 
 **The generated project will have a structure similar to:**
-
-<img width="1536" height="713" alt="WRIGHT generated project structure" src="https://github.com/user-attachments/assets/1ce2e2bb-04e8-4882-b84c-48f9840d01c0" />
-
-<details>
-<summary>Click to expand and copy</summary>
   
 ```text
 my-website/
@@ -88,8 +83,6 @@ my-website/
 ├── favicon.ico
 └── README.txt
 ```
-
-</details>
 
 ## Screenshots
 
@@ -116,11 +109,6 @@ Each preset generates the same base structure, but adapts `index.html` and `styl
 ## Project Architecture
 
 **WRIGHT is organized into a shared core and independent presets:**
-
-<img width="1536" height="713" alt="WRIGHT architecture — shared core and independent presets" src="https://github.com/user-attachments/assets/36ac5de8-fff0-4c2d-b601-6c584285a29d" />
-
-<details>
-<summary>Click to expand and copy</summary>
   
 ```text
 wright/
@@ -139,8 +127,6 @@ wright/
 ├── README.md
 └── LICENSE
 ```
-
-</details>
 
 
 The `core/` directory contains everything shared between presets, and each preset in `presets/` only defines what is specific to its framework.
