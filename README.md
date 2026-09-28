@@ -67,7 +67,7 @@ WRIGHT will ask you for a project name, then ask which preset you want to use. D
 › Bootstrap version? (v4 / v5): v5
 ```
 
-The generated project will have a structure similar to:
+**The generated project will have a structure similar to:**
 
 <img width="1536" height="713" alt="WRIGHT generated project structure" src="https://github.com/user-attachments/assets/1ce2e2bb-04e8-4882-b84c-48f9840d01c0" />
 
@@ -115,7 +115,7 @@ Each preset generates the same base structure, but adapts `index.html` and `styl
 
 ## Project Architecture
 
-WRIGHT is organized into a shared core and independent presets:
+**WRIGHT is organized into a shared core and independent presets:**
 
 <img width="1536" height="713" alt="WRIGHT architecture — shared core and independent presets" src="https://github.com/user-attachments/assets/36ac5de8-fff0-4c2d-b601-6c584285a29d" />
 
