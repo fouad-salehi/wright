@@ -1,11 +1,13 @@
 # WRIGHT
 
-![WRIGHT](https://img.shields.io/badge/version-2.0.0-important)
+![Version](https://img.shields.io/badge/version-2.0.0-important)
 ![Platform](https://img.shields.io/badge/platform-Node.js-green)
 ![Language](https://img.shields.io/badge/language-JavaScript-yellow)
 ![Purpose](https://img.shields.io/badge/purpose-folder%20generator-blue)
 ![Presets](https://img.shields.io/badge/presets-vanilla%20%7C%20tailwind%20%7C%20bootstrap-blue)
-![Run](https://img.shields.io/badge/run-node%20wright.js-important)
+![Registry](https://img.shields.io/badge/registry-GitHub%20Packages-181717?logo=github)
+![CLI](https://img.shields.io/badge/CLI-wright-blue)
+![License](https://img.shields.io/badge/license-Proprietary-red)
 
 <img width="1586" height="793" alt="WRIGHT — web project structure generator" src="https://github.com/user-attachments/assets/2dc3410e-d86b-4997-a397-c9fa25fe2e2f" />
 
