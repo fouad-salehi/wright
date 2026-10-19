@@ -9,8 +9,6 @@
 
 <img width="1586" height="793" alt="WRIGHT — web project structure generator" src="https://github.com/user-attachments/assets/2dc3410e-d86b-4997-a397-c9fa25fe2e2f" />
 
-
-
 ## Description
 
 WRIGHT is a simple and practical project structure generator designed for web developers and designers working with HTML, CSS, JavaScript, PHP, and related libraries and frameworks.
@@ -21,13 +19,13 @@ WRIGHT now ships with multiple presets, so the same tool can scaffold a plain pr
 
 The generated structure includes:
 
-* An `index.html` file for front-end development
-* A `dashboard/assets` directory
-* Separate folders for CSS, JavaScript, images, and fonts
-* A default `stylesheet.css`
-* An empty `app.js`
-* A `favicon.ico`
-* A project `README.txt`
+- An `index.html` file for front-end development
+- A `dashboard/assets` directory
+- Separate folders for CSS, JavaScript, images, and fonts
+- A default `stylesheet.css`
+- An empty `app.js`
+- A `favicon.ico`
+- A project `README.txt`
 
 ## Requirements
 
@@ -36,10 +34,65 @@ The generated structure includes:
 
 ## Getting Started
 
+### Run from Source
+
 Clone or download the repository, then run:
 
 ```bash
+git clone https://github.com/fouad-salehi/wright.git
+cd wright
 node wright.js
+```
+
+### Global Installation
+
+WRIGHT is available through GitHub Packages. To install it globally, configure npm authentication first.
+
+Create a [GitHub Personal Access Token (classic)](https://github.com/settings/tokens) with the `read:packages` scope.
+
+Add the following to your user-level `.npmrc` file:
+
+```ini
+@fouad-salehi:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+```
+
+Set the `GITHUB_TOKEN` environment variable to your token.
+
+**Windows Command Prompt:**
+
+```cmd
+set GITHUB_TOKEN=YOUR_GITHUB_TOKEN
+```
+
+**PowerShell:**
+
+```powershell
+$env:GITHUB_TOKEN = "YOUR_GITHUB_TOKEN"
+```
+
+**Linux/macOS:**
+
+```bash
+export GITHUB_TOKEN=YOUR_GITHUB_TOKEN
+```
+
+Replace `YOUR_GITHUB_TOKEN` with your actual token. Run the installation command in the same terminal session where the variable is set.
+
+Keep your token private and never commit it to your repository.
+
+Install WRIGHT globally:
+
+```bash
+npm install -g @fouad-salehi/wright
+```
+
+### CLI Usage
+
+After installation, run WRIGHT from any directory:
+
+```bash
+wright
 ```
 
 WRIGHT will ask you for a project name, then ask which preset you want to use. Depending on the preset, it may ask for a version.
@@ -68,7 +121,7 @@ WRIGHT will ask you for a project name, then ask which preset you want to use. D
 ```
 
 **The generated project will have a structure similar to:**
-  
+
 ```text
 my-website/
 ├── dashboard/
@@ -93,23 +146,22 @@ my-website/
   <img src="https://github.com/user-attachments/assets/32d4a72a-fe6f-4857-9176-b20d9ec063f2" alt="WRIGHT success message after generating the project" width="24%" style="border-radius: 12px;" />
 </p>
 
-
 ## Presets
 
 WRIGHT ships with three built-in presets:
 
-| Preset    | Description                           | Versions |
-| --------- | ------------------------------------- | -------- |
-| vanilla   | Plain HTML / CSS / JavaScript project | —        |
-| tailwind  | Tailwind CSS project via CDN          | v3 / v4  |
-| bootstrap | Bootstrap project via CDN             | v4 / v5  |
+| Preset | Description | Versions |
+| --- | --- | --- |
+| vanilla | Plain HTML / CSS / JavaScript project | — |
+| tailwind | Tailwind CSS project via CDN | v3 / v4 |
+| bootstrap | Bootstrap project via CDN | v4 / v5 |
 
 Each preset generates the same base structure, but adapts `index.html` and `stylesheet.css` to the selected framework and version.
 
 ## Project Architecture
 
 **WRIGHT is organized into a shared core and independent presets:**
-  
+
 ```text
 wright/
 ├── core/
@@ -128,7 +180,6 @@ wright/
 └── LICENSE
 ```
 
-
 The `core/` directory contains everything shared between presets, and each preset in `presets/` only defines what is specific to its framework.
 
 This makes it easy to add new presets (for example, Vue, React, Svelte, or Astro) without duplicating logic.
@@ -142,7 +193,6 @@ WRIGHT is designed to make the initial setup of a web project simple, fast, and 
 ## Author
 
 [**Fouad Salehi**](https://github.com/fouad-salehi)
-
 
 ## License
 
