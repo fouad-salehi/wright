@@ -1,5 +1,5 @@
 {
-  "name": "@fouad-salehi/wright",
+  "name": "wright-tools",
   "version": "2.0.1",
   "description": "A folder structure generator for web developers.",
   "main": "wright.js",
@@ -13,8 +13,5 @@
   "license": "SEE LICENSE IN LICENSE",
   "engines": {
     "node": ">=18"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
