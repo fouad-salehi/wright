@@ -1,15 +1,15 @@
 # WRIGHT
 
-![Version](https://img.shields.io/badge/version-2.0.0-important)
+![Version](https://img.shields.io/badge/version-2.0.2-important)
 ![Platform](https://img.shields.io/badge/platform-Node.js-green)
 ![Language](https://img.shields.io/badge/language-JavaScript-yellow)
 ![Purpose](https://img.shields.io/badge/purpose-folder%20generator-blue)
 ![Presets](https://img.shields.io/badge/presets-vanilla%20%7C%20tailwind%20%7C%20bootstrap-blue)
-![Registry](https://img.shields.io/badge/registry-GitHub%20Packages-181717?logo=github)
+![Registry](https://img.shields.io/badge/registry-npm-CB3837?logo=npm)
 ![CLI](https://img.shields.io/badge/CLI-wright-blue)
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 
-<img width="1586" height="793" alt="WRIGHT — web project structure generator" src="https://github.com/user-attachments/assets/2dc3410e-d86b-4997-a397-c9fa25fe2e2f" />
+<img width="1456" height="720" alt="WRIGHT — web project structure generator" src="https://github.com/user-attachments/assets/d79b023c-0ff0-4481-98a1-9636b99d51f4" />
 
 ## Description
 
@@ -36,19 +36,45 @@ The generated structure includes:
 
 ## Getting Started
 
-### Run from Source
+### Install from npm (Recommended)
 
-Clone or download the repository, then run:
+WRIGHT is published on the public npm registry. This is the simplest and fastest way to install it.
+
+**Global installation:**
 
 ```bash
-git clone https://github.com/fouad-salehi/wright.git
-cd wright
-node wright.js
+npm install -g wright-tools
 ```
 
-### Global Installation
+This installs the `wright` command globally, so you can run it from any directory.
 
-WRIGHT is available through GitHub Packages. To install it globally, configure npm authentication first.
+**Verify the installation:**
+
+```bash
+wright
+```
+
+If the CLI starts and shows the project name prompt, the installation was successful.
+
+**Update to the latest version:**
+
+```bash
+npm update -g wright-tools
+```
+
+**Uninstall:**
+
+```bash
+npm uninstall -g wright-tools
+```
+
+> **Note:** The package name on npm is `wright-tools`, while the executable command is `wright`. This is intentional: the command is short and easy to type, while the package name follows npm naming conventions.
+
+---
+
+### Install from GitHub Packages
+
+WRIGHT is also available through GitHub Packages. This method requires npm authentication and is mainly useful if you want to pull directly from the GitHub registry.
 
 Create a [GitHub Personal Access Token (classic)](https://github.com/settings/tokens) with the `read:packages` scope.
 
@@ -89,15 +115,77 @@ Install WRIGHT globally:
 npm install -g @fouad-salehi/wright
 ```
 
-### CLI Usage
+---
 
-After installation, run WRIGHT from any directory:
+### Run from Source (Clone)
+
+If you want to inspect the source code, contribute, or run the latest development version:
 
 ```bash
-wright
+git clone https://github.com/fouad-salehi/wright.git
+cd wright
+node wright.js
 ```
 
-WRIGHT will ask you for a project name, then ask which preset you want to use. Depending on the preset, it may ask for a version.
+This runs WRIGHT directly from the cloned folder without a global installation.
+
+## CLI Usage
+
+WRIGHT is fully interactive. After launching it, it walks you through a short set of prompts and then generates the entire project structure for you.
+
+### Launching the CLI
+
+Depending on how you installed WRIGHT, launch it with one of these commands:
+
+| Installation method | Launch command |
+| --- | --- |
+| npm (global) | `wright` |
+| GitHub Packages (global) | `wright` |
+| Run from source | `node wright.js` |
+
+The behavior is identical in all three cases.
+
+### The Interactive Prompts
+
+WRIGHT asks questions in sequence. The number of questions depends on the preset you choose.
+
+**Step 1 — Project name**
+
+```text
+› Project name: my-website
+```
+
+Enter the name of the folder that will be created. WRIGHT creates this folder in the current working directory.
+
+**Step 2 — Preset selection**
+
+```text
+› Preset? (vanilla / tailwind / bootstrap): vanilla
+```
+
+Choose one of the three built-in presets:
+
+- `vanilla` — plain HTML / CSS / JavaScript
+- `tailwind` — Tailwind CSS via CDN
+- `bootstrap` — Bootstrap via CDN
+
+**Step 3 — Version selection (only for tailwind and bootstrap)**
+
+If you chose `tailwind`:
+
+```text
+› Tailwind version? (v3 / v4): v4
+```
+
+If you chose `bootstrap`:
+
+```text
+› Bootstrap version? (v4 / v5): v5
+```
+
+The `vanilla` preset skips this step because it has no external framework version.
+
+### Example Sessions
 
 **Vanilla project:**
 
@@ -122,7 +210,9 @@ WRIGHT will ask you for a project name, then ask which preset you want to use. D
 › Bootstrap version? (v4 / v5): v5
 ```
 
-**The generated project will have a structure similar to:**
+### What Gets Generated
+
+After the prompts finish, WRIGHT creates the folder and all files, then prints a success message. The generated project looks like this:
 
 ```text
 my-website/
@@ -138,6 +228,15 @@ my-website/
 ├── favicon.ico
 └── README.txt
 ```
+
+The `index.html` and `stylesheet.css` contents differ depending on the preset and version you selected. For example, the Tailwind preset injects the Tailwind CDN link and version-specific configuration into `index.html`, while the Bootstrap preset injects the Bootstrap CDN link matching the chosen major version.
+
+### Notes and Tips
+
+- **Working directory:** The project folder is created relative to where you run the command. Make sure you are in the parent directory where you want the new project to live.
+- **Existing folders:** If a folder with the same name already exists, WRIGHT will not overwrite it silently — check the prompt output for any warning.
+- **No dependencies:** WRIGHT uses only built-in Node.js modules, so there is nothing extra to install after the global package.
+- **Non-interactive use:** WRIGHT is designed as an interactive CLI. It does not currently accept flags for project name or preset, so it must be run in a terminal that supports interactive input.
 
 ## Screenshots
 
@@ -162,7 +261,7 @@ Each preset generates the same base structure, but adapts `index.html` and `styl
 
 ## Project Architecture
 
-**WRIGHT is organized into a shared core and independent presets:**
+WRIGHT is organized into a shared core and independent presets:
 
 ```text
 wright/
