@@ -1,13 +1,13 @@
 # WRIGHT
 
-![Version](https://img.shields.io/badge/version-2.0.2-important)
-![Platform](https://img.shields.io/badge/platform-Node.js-green)
-![Language](https://img.shields.io/badge/language-JavaScript-yellow)
-![Purpose](https://img.shields.io/badge/purpose-folder%20generator-blue)
-![Presets](https://img.shields.io/badge/presets-vanilla%20%7C%20tailwind%20%7C%20bootstrap-blue)
-![Registry](https://img.shields.io/badge/registry-npm-CB3837?logo=npm)
-![CLI](https://img.shields.io/badge/CLI-wright-blue)
-![License](https://img.shields.io/badge/license-Proprietary-red)
+![Version](https://img.shields.io/npm/v/wright-tools?style=for-the-badge&logo=npm&logoColor=white&label=version&color=CB3837)
+![Platform](https://img.shields.io/badge/platform-Node.js%20v18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Language](https://img.shields.io/badge/language-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Purpose](https://img.shields.io/badge/purpose-folder%20generator-007ACC?style=for-the-badge&logo=files&logoColor=white)
+![Presets](https://img.shields.io/badge/presets-vanilla%20%7C%20tailwind%20%7C%20bootstrap-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Registry](https://img.shields.io/badge/registry-npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![CLI](https://img.shields.io/badge/CLI-wright-4B5563?style=for-the-badge&logo=gnubash&logoColor=white)
+![License](https://img.shields.io/badge/license-Proprietary-red?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
 
 <img width="1456" height="720" alt="WRIGHT — web project structure generator" src="https://github.com/user-attachments/assets/d79b023c-0ff0-4481-98a1-9636b99d51f4" />
 
